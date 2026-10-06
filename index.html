@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Contact Form" />
+    <meta name="description" content="An accessible HTML contact form with real labels, grouped controls, and browser validation." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Contact Form" />
+    <meta property="og:description" content="An accessible HTML contact form with real labels, grouped controls, and browser validation." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Contact Form" />
+    <meta property="twitter:description" content="An accessible HTML contact form with real labels, grouped controls, and browser validation." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+<body>
+    <header>
+        <h1>Acme Support</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Help</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+
+        <h1>Contact us</h1>
+        <p>
+            Send us a message and we will het back to you.
+        </p>
+
+        <form action="https://example.com" method="post">
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" required>
+
+            <br><br>
+
+            <label for="email" id="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br>
+
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject">
+                <option value="placeholder">--Choose a topic--</option>
+                <option value="ticket">Opening a ticket</option>
+                <option value="bug">Reporting a bug</option>
+                <option value="change">Requesting a change</option>
+            </select>
+
+            <br><br>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message"
+            minlength="100"></textarea>
+
+            <br><br>
+
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+
+                <input type="radio" name="source" id="search" value="search">
+                <label for="search">Search</label>
+
+                <br>
+                
+                <input type="radio" name="source" id="friend" value="friend">
+                <label for="friend">Friend</label>
+
+                <br>
+                
+                <input type="radio" name="source" id="social-media" value="social-media">
+                <label for="social-media">Social media</label>
+                
+            </fieldset>
+
+            <br>
+
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <label for="newsletter">Send me product updates</label>
+
+            <br><br>
+
+            <button type="submit">Send message</button>
+        </form>
+
+        <hr>
+    </main>
+    <footer>
+        <p>&copy; 2026 Acme Support</p>
+    </footer>
+</body>
+</html>
